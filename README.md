@@ -8,7 +8,7 @@ YOUR introduction here.
 # Group Name-List
 
 - Github ID: qrsikno2       QMID: 190898878 (Support TA) 
-- Github ID: Aether0623     QMID: 231220839 (Lead)
-- Github ID: ZQH-21         QMID: 231222442 (Member)
+- Github ID: ZQH-21         QMID: 231222442 (Lead)
+- Github ID: Aether0623     QMID: 231220839 (Member)
 - Github ID: DLZDC          QMID: 231220046(Member)
 - Info of others
