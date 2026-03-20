@@ -11,4 +11,5 @@ YOUR introduction here.
 - Github ID: ZQH-21         QMID: 231222442 (Lead)
 - Github ID: Aether0623     QMID: 231220839 (Member)
 - Github ID: DLZDC          QMID: 231220046(Member)
+- Github ID: Anoyo36        QMID: 231220596(Member)
 - Info of others
