@@ -22,7 +22,7 @@
 <html>
 <head>
     <title>Main Page for TA</title>
-    <style>
+    <style> 
         body {
             background: #f7f7f9;
             font-family: 'Segoe UI', Arial, sans-serif;
@@ -139,7 +139,7 @@
         .nav-logo img {
             width: 100%;
             height: 100%;
-            object-fit: contain; /* 保持图片比例，充满按钮 */
+            object-fit: contain; /* 保持图片比例，充满按钄1�7 */
             display: block;
         }
 
