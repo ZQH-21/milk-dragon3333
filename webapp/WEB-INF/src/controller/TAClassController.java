@@ -1,8 +1,8 @@
-package chain;
+package controller;
 
 
 import model.*;
-import utils.CourseStore;
+import store.CourseStore;
 
 import java.util.*;
 import java.io.*;
@@ -10,7 +10,7 @@ import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 
 
-public class TAclasscontroller extends HttpServlet {
+public class TAClassController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action = request.getParameter("action");
         if ("view_information".equals(action)) {
@@ -26,7 +26,7 @@ public class TAclasscontroller extends HttpServlet {
         request.getSession().setAttribute("courseList", courseList);
 
         // 转发到JSP
-        request.getRequestDispatcher("/globalclass.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/views/ta/job-list.jsp").forward(request, response);
     }
 
    

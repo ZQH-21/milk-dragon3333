@@ -1,13 +1,13 @@
-package chain;
+package controller;
 
 import model.*;
-import utils.CourseStore;
+import store.CourseStore;
 import java.util.*;
 import java.io.*;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 
-public class MOclasscontroller extends HttpServlet {
+public class MOClassController extends HttpServlet {
     
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -47,20 +47,20 @@ public class MOclasscontroller extends HttpServlet {
             CourseStore.saveCourse(newCourse);
             
             //提交成功后，让页面跳转回 MO 的主面板 (Dashboard)
-            request.getRequestDispatcher("/MO_dashboard.jsp").forward(request, response);
+            request.getRequestDispatcher("/WEB-INF/views/mo/dashboard.jsp").forward(request, response);
         }
     }
 
 
     private void show_personal_center(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // 将请求转发到对应的 JSP 视图
-        request.getRequestDispatcher("/MO_personal_center.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/views/mo/personal-center.jsp").forward(request, response);
     }
 
     // 处理跳转到“创建课程”页面的逻辑
    private void create_class(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // 直接将请求转发到我们即将编写的 create_project.jsp 页面
-        request.getRequestDispatcher("/create_project.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/views/mo/create-project.jsp").forward(request, response);
        }
 
 

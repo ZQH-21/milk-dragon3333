@@ -120,17 +120,17 @@
         </div>
         <div class="pagination">
             <% if (page_1 > 1) { %>
-                <a href="globalclass.jsp?page=<%= page_1-1 %>">&laquo; Prev</a>
+                <a href="<%= response.encodeURL("TAclasscontroller?action=view_information&page=" + (page_1 - 1)) %>">&laquo; Prev</a>
             <% } %>
             <% for (int p = 1; p <= totalPages; p++) { %>
                 <% if (p == page_1) { %>
                     <span class="current"><%= p %></span>
                 <% } else { %>
-                    <a href="globalclass.jsp?page=<%= p %>"><%= p %></a>
+                    <a href="<%= response.encodeURL("TAclasscontroller?action=view_information&page=" + p) %>"><%= p %></a>
                 <% } %>
             <% } %>
             <% if (page_1 < totalPages) { %>
-                <a href="globalclass.jsp?page=<%= page_1+1 %>">Next &raquo;</a>
+                <a href="<%= response.encodeURL("TAclasscontroller?action=view_information&page=" + (page_1 + 1)) %>">Next &raquo;</a>
             <% } %>
         </div>
     </div>

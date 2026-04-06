@@ -1,4 +1,4 @@
-package utils;
+package store;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -6,7 +6,10 @@ import java.util.List;
 import model.Course;
 
 public class CourseStore {
-    private static final String FILE_PATH = "C:\\Tomcat11\\webapps\\webapp\\WEB-INF\\file\\courses.txt";
+    private static final String FILE_PATH =
+            System.getProperty("catalina.base") + File.separator +
+            "webapps" + File.separator + "SE" + File.separator +
+            "WEB-INF" + File.separator + "file" + File.separator + "courses.txt";
 
     public static List<Course> getCourseList() {
         List<Course> courseList = new ArrayList<>();
