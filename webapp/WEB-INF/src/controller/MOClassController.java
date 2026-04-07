@@ -60,6 +60,7 @@ public class MOClassController extends HttpServlet {
     // 处理跳转到“创建课程”页面的逻辑
    private void create_class(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // 直接将请求转发到我们即将编写的 create_project.jsp 页面
+        
         request.getRequestDispatcher("/WEB-INF/views/mo/create-project.jsp").forward(request, response);
        }
 
